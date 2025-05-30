@@ -1,9 +1,11 @@
-// Exercise 6: Write a function named 'uniqueValues' that takes an array of values and returns a new array with only unique values, removing duplicates.
+// Exercise 6: Write a function named 'uniqueValues' that takes an array of values and 
+// returns a new array with only unique values, removing duplicates.
 
 function uniqueValues(arr) {
   // your code here
-  let returnArr = [];
 
+  const set = new Set(arr);
+  const returnArr = [...set];
 
   return returnArr;
 }

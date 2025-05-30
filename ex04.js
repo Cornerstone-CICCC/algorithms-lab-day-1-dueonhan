@@ -8,14 +8,17 @@ function countOccurrences(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     //obj.arr[i]
-
     for (let j = 1; j < arr.length; j++) {
+      console.log(`arr[i] ${arr[i]} +`)
       if (arr[i] === arr[j]) {
         count += 1;
+        obj.obj[key] = key;
+
       }
     }
     console.log(arr[i]);
     console.log(count);
+    console.log(obj);
     //const obj = { name: "Ben" };
     //obj.age = 22;
 
